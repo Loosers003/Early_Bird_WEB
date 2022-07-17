@@ -1,0 +1,32 @@
+<div class="data_management">
+    <div class="row data_management_header">
+        <div class="col">
+            <div class="dManagement_left">
+                <p><span><img src="../../../assets/images/dMAnagementLogo.svg"></span>&nbsp;Data Management/{{selectedManagement}}</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row dManagement_right">
+                
+                <div class="col"  *ngIf="selectedManagement === 'Brand Management' ||  selectedManagement === 'Product Management'">
+                    <div class="d_search_box">
+                        <div class="form-outline">
+                          <input type="search" id="form1" class="form-control" placeholder="Search" />
+                        
+                        </div>
+                       
+                      </div>
+                </div>
+                <div class="col" *ngIf="selectedManagement === 'Brand Management'">
+                    <button class="d_button" (click)="setRoute('createBrand')">Create Brand</button>
+                </div>
+                <div class="col" *ngIf="selectedManagement === 'Product Management'">
+                    <button class="d_button"(click)="setRoute('createProduct')">Create Product</button>
+                </div>
+            </div>
+        </div>           
+    </div>
+    </div>
+    <div class="data_management">
+        <router-outlet></router-outlet>
+    </div>

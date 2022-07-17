@@ -1,0 +1,66 @@
+<div>
+    <table class="table">
+        <thead class="table_header">
+            <tr>
+                <th scope="col">S.no</th>
+                <th scope="col">Brand name</th>
+                <th scope="col">Priority</th>
+                <th scope="col">Discount</th>
+                <th scope="col">Category Type</th>
+                <th scope="col">Avaiable</th>
+                <th scope="col">Edit</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of brandList;let i = index">
+            <tr id="i" class="table_body">
+                <td scope="row">{{i+1}}</td>
+                <td>
+                    <div class="row">
+                        <div class="col">
+                            <img src="" class="brand" />
+                        </div>
+                        <div class="col" style="margin-left: -47px;">
+                            <div class="row">
+                                {{item.name}}
+                            </div>
+                            <div class="row">
+                                {{item?.subName}}
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <select name="{{i+1}}">
+                        <option>{{item.priority}}</option>
+                    </select>
+                </td>
+                <td>
+                    {{item.discount}}
+                </td>
+                <td>
+                    {{item.category_type}}
+                </td>
+                <td>
+                    {{item.available}}
+                    <!-- Default checked -->
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+
+                    </div>
+                </td>
+                <td>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../../assets/images/edit.png" (click)="setRoute('createBrand')">
+                        </div>
+                        <div class="col">
+                            <img src="../../../assets/images/delete.png">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>

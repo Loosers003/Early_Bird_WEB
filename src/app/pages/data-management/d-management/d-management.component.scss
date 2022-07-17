@@ -1,0 +1,84 @@
+.data_management{
+    padding: 0;
+    margin: 0;
+}
+.data_management_header{
+    padding: 0px 10px;
+    margin: 0;
+    width: 100vw;
+    height: 54px;
+    left: 110px;
+    top: 39px;
+    background: #F2F2F2;
+    border: 0.2px solid #828282;
+    box-sizing: border-box;
+}
+.dManagement_left{
+    padding: 10px;
+}
+.dManagement_right{
+    padding: 10px;
+}
+.d_brand_managemnt{
+    color: #F2F2F2;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 12px;
+    width: 333px;
+    height: 164px;
+    background: #219653;
+}
+.d_product_managemnt{
+    color: #F2F2F2;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 12px;
+    width: 333px;
+    height: 164px;
+    background: #2D9CDB;
+}
+
+.d_search_box {
+    box-sizing: border-box;
+
+width: 359px;
+height: 28px;
+
+
+/* Gray 6 */
+
+background: #F2F2F2;
+/* Gray 4 */
+
+border: 1px solid #BDBDBD;
+border-radius: 5px;
+}
+
+.d_button {
+width: 138px;
+height: 28px;
+left: 1172px;
+top: 13px;
+color: #F2F2F2;
+margin-top: 10px;
+
+/* Blue 1 */
+
+background: #2F80ED;
+border-radius: 4px;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+}
